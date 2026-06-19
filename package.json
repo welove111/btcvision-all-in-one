@@ -1,0 +1,27 @@
+{
+  "name": "@welove111/openclaw-btcvision-all-in-one",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "All-in-one Bitcoin intelligence plugin from BTCvision.org — live price, predictions, halving countdown, Fear & Greed index, market signals, price alerts, a daily brief, and an opt-in donation nudge.",
+  "license": "MIT",
+  "author": "welove111",
+  "homepage": "https://btcvision.org",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/welove111/btcvision-all-in-one"
+  },
+  "keywords": ["bitcoin", "btc", "crypto", "price", "alert", "daily-brief", "openclaw-plugin"],
+  "main": "./src/index.js",
+  "openclaw": {
+    "extensions": ["./src/index.js"],
+    "compat": {
+      "pluginApi": ">=2026.3.24-beta.2",
+      "minGatewayVersion": "2026.3.24-beta.2"
+    },
+    "build": {
+      "openclawVersion": "2026.3.24-beta.2",
+      "pluginSdkVersion": "2026.3.24-beta.2"
+    }
+  },
+  "dependencies": {}
+}

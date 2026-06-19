@@ -1,0 +1,25 @@
+{
+  "id": "btcvision-all-in-one",
+  "name": "BTCvision All-in-One",
+  "description": "Live Bitcoin price, predictions, halving countdown, Fear & Greed index, market signals, price alerts, a daily brief, and an opt-in donation nudge — all from BTCvision.org, no API key required.",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "donationNudge": {
+        "type": "boolean",
+        "description": "Opt-in: append a short donation reminder after market lookups and daily briefs. Disabled by default.",
+        "default": false
+      },
+      "alertThresholdPercent": {
+        "type": "number",
+        "description": "Percent 24h price move that triggers an alert.",
+        "default": 3
+      },
+      "alertPriceTarget": {
+        "type": "number",
+        "description": "Optional user-defined BTC price target that triggers an alert when crossed."
+      }
+    }
+  }
+}
